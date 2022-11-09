@@ -12,10 +12,10 @@ Do *not* click on "Tutorial" from the main menu. That's the Myth 2 tutorial. Ins
 
 * After launching Myth 2, click on "New Game".
 * In the Campaign box on the next screen, one of the list items should be "Magma - The Fallen Levels v2". It may or may not already be selected... regardless, **shift-click** on it now using L4 + R2.
-* This will make a mission called "Training Map" appear at the top of the Level list, in the upper-left of the screen. Click on that mission to select it.
+* The shift-click will make a mission called "Training Map" appear at the top of the Level list, in the upper-left of the screen. Click on that mission to select it.
 * Select a difficulty in the upper right. This won't affect the tutorial, but will affect the following "real" missions.
 * Finally, click the "TFL Gameplay" checkbox below the Campaign box.
-* Now you can click on the "OK" button in the lower-right to launch it.
+* Now you can click on the "OK" button in the lower-right to launch into the tutorial.
 
 Running the Campaign
 --------------------

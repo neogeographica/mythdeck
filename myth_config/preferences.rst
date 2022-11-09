@@ -16,7 +16,7 @@ In the box marked **1** you can see the current version of the Project Magma pat
 
 In the box marked **2** I've disabled the "control bar", which is a piece of UI at the bottom of the screen that can be used to mouse-select unit presets and formations. Using dedicated buttons on the Deck is faster and saves precious screen real estate.
 
-In the box marked **3**, note that I've enabled persistent camera zoom. I always just want to leave the camera at max zoom anyway, so this way I don't have to fix it at the start of every mission. I also left persistent formations enabled; I tend to keep the same formation for a given group of units, and not having to re-select it all the time is very nice.
+In the box marked **3**, note that I've enabled persistent camera zoom. I always just want to leave the camera at max zoom anyway, so this way I don't have to fix it at the start of every mission. I also left persistent formations enabled; I tend to keep the same formation for a given group of units, and not having to re-select it all the time is very nice. Both of these "persistences" have some limitations -- some in-game cutscenes will reset zoom to default, and you lose any current persisted formations when you reload a savegame -- but they're still a big help.
 
 And finally, as noted in **4**, you can change the resolution if you like. Running at lower resolutions has the advantage of making enemy "dots" more visible on the overhead map, but at the expense of image quality. Try different resolutions to see what you like, but note that the native Deck screen resolution maxes out at 1280x800.
 

@@ -31,8 +31,8 @@ Finally, you can resize the overhead map. If you are playing at a larger-than-or
 
   |l4| |plus| |r1| to reset the map to its original size.
 
-Capslock and Stats
-------------------
+Info/Stats
+----------
 
   |rstickclick| to toggle the display of whatever info you chose to associate with the capslock key in the Myth control preferences.
 

@@ -33,7 +33,7 @@ Other Controls
 Additional Camera Moves
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-  |l2| |plus| |rstick| up/down to zoom in/out. (Mode-shifted stick left/right have other effects described on the :doc:`Movement<movement>` page.) If you enabled "persistent zoom" in the preferences you won't need to do much zooming.
+  |l2| |plus| |rstick| up/down to zoom in/out. (Mode-shifted right stick left/right have other effects described on the :doc:`Movement<movement>` page.) If you enabled "persistent zoom" in the preferences you won't need to do much zooming, just be aware that a few in-game cutscenes can reset you to the default zoom level.
 
   |rtrack| to move the cursor to screen edges/corners can change the view if your Myth preferences have enabled that behavior.
 

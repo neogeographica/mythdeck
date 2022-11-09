@@ -25,7 +25,7 @@ Here's a few conventions used when controls are represented in the following pag
 
   "|l2| while touching |rtrack|" indicates pulling the left trigger while your thumb is still resting on the right trackpad. This is a right mouseclick action as far as Myth is concerned.
 
-  "|l2| |plus| <some other button>" indicates holding the left trigger while you are *not* touching the right trackpad, and pressing <some other button>. This a case of using the "mode shift" mentioned above.
+  "|l2| |plus| <some other button>" indicates holding the left trigger while you are *not* touching the right trackpad, and pressing <some other button>. This a case of using the "mode shift" mentioned above. Release <some other button> before (or at the same time as) you release the left trigger.
 
   And other button combos do exist besides the left-trigger stuff. "<some button> **+** <some other button>" indicates holding <some button> then pressing <some other button>.
 

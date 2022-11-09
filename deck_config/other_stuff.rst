@@ -5,7 +5,7 @@ A few other actions are available that don't come into play during the regular s
 
   |l2| |plus| |ltrack| to bring up the menu, and select and click on the menu icon for the action you want.
 
-Once you've selected an action, in three of these four cases you then will need to pick a number. Release the trigger so you're no longer mode-shifted and continue to use the trackpad; the menu will change to a number wheel.
+Once you've selected an action, in three of these four cases you then will need to pick a number. Release the trigger so you're no longer mode-shifted, and continue to use the trackpad; the menu will change to a number wheel.
 
   |ltrack| to select and click on a number.
 

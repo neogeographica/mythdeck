@@ -99,10 +99,10 @@ At this point, if you want to do a sanity check, you should be able to run the M
 
 Myth 2 should start up and run correctly. Once you get to the main menu, go ahead and quit out of it for now.
 
-Other Patches
--------------
+Other Addons
+------------
 
-To take advantage of community work on Myth 2 you may want to apply a few other patches. `The Tain`_ is one good place to get Myth stuff. My Myth 2 installation includes:
+To take advantage of community work on Myth 2 you may want to add a few other modifications. `The Tain`_ is one good place to get Myth stuff. FYI my Myth 2 installation always includes:
 
 * `Detail Texture Megapack`_
 * `Myth II QuickTime Cutscenes`_
@@ -113,7 +113,7 @@ And also, support for playing the entire Myth\:TFL campaign and multiplayer in t
 * `Myth TFL Quicktime Cutscenes`_
 * `Myth TFL Multiplayer Mappack`_
 
-Installing these is just a matter of extracting files into the right location as per their READMEs.
+Installing Myth addons is generally just a matter of extracting files into the right location as per their READMEs. In these cases, the end result though will be (for the two "Cutscenes" patches) a bunch of ".mov" files that go into a "cutscenes" subdirectory in your Myth 2 installation, and (for the other three downloads) three large files that go into the "plugins" subdirectory.
 
 Adding to Steam
 ---------------

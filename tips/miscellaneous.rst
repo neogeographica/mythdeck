@@ -1,8 +1,8 @@
 Miscellaneous
 =============
 
-Tutorial Bindings
------------------
+Tutorial Keybindings
+--------------------
 
 If you play the Myth 2 tutorial (or the Myth: TFL tutorial as described on the next page), the narrator will require you to do various actions to make progress. In fact he calls out the specific keys you should press to do different actions.
 
@@ -21,6 +21,8 @@ Use Your Time Powers
 --------------------
 
 You can give orders to units at any game speed, and also while the game is paused. It's absolutely expected that you will slow down or pause the game to be able to deal with hectic situations.
+
+It can also be nice to speed up the game when e.g. re-traversing a big area that you have already cleared of bad guys. Just don't get too frisky with the speed-up button in potentially dangerous situations, because that's how bad surprises happen!
 
 The Triggers Aren't That Different
 ----------------------------------
@@ -45,11 +47,13 @@ Savegame Naming
 
 You'll have to open the virtual keyboard (Steam button + X) at least once per level, to type a savegame name (unless you are ironman-ing it). However if you do multiple savegames per level you can leverage the other control bindings to avoid using the virtual keyboard most of the time.
 
-When you are creating the first save for a level, the savegame dialog will open with "New Saved Game" as the initial name text, already selected. You can press left trigger + double-tap B to generate a "backspace" that deletes all of that text. Now you can open the virtual keyboard and enter your initial savegame name. Let's say for the sake of example that you're playing Willow Creek and your first savegame name is "creek1".
+When you are creating the first save for a level, the savegame dialog will open with "New Saved Game" as the initial name text, already selected. You can press left trigger + double-tap B to generate a "backspace" that deletes all of that text. Now you can open the virtual keyboard and enter your initial savegame name.
+
+Let's say for the sake of example that you're playing Willow Creek and your first savegame name is "creek1".
 
 If after playing a bit more you want to create another savegame, you don't need to go to the virtual keyboard to name it. Instead:
 
-* Use the right trackpad and right trigger to move the cursor to the end of the name "creek1" and click there.
+* Use the right trackpad and right trigger to move the cursor to the end of the name "creek1" and click right after it.
 * Now when you do left trigger + double-tap B, you will just delete the "1" at the end of the name.
 * Enter a "2" using the left trackpad number wheel or the D-Pad.
 * Hit the left bumper to accept the savegame name "creek2".

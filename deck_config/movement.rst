@@ -17,14 +17,14 @@ If you click-and-drag at the destination spot, you will also set the direction t
 
 (If you're *not* doing click-and-drag, remember you still need to leave your thumb on the pad in order for the click to register.)
 
-In any case, when you designate a destination, your currently selected units will pathfind their way there. Note that a moving unit will not react to enemy attacks. Keep an eye on your dudes!
+In any case, when you designate a destination, your currently selected units will pathfind their way there. Note that a unit executing a movement command will not react to enemy attacks. Keep an eye on your dudes!
 
 Formations
 ~~~~~~~~~~
 
 While you have some units selected, you can choose a formation that will affect your next movement order. For example if you pick the "long line" formation and then give a movement order to some spot, the selected units' goal is to end up in a "long line" formation at that spot.
 
-If you have left "persistent formations" enabled (as described on the :doc:`Preferences<../myth_config/preferences>` page), a group of units will remember its formation for subsequent movement commands. In that case you only have to designate a formation when you want to change or initially set the formation for a particular group of units.
+If you have left "persistent formations" enabled (as described on the :doc:`Preferences<../myth_config/preferences>` page), a group of units will remember its formation for subsequent movement commands (unless you reload a savegame). In that case you only have to designate a formation when you want to change or initially set the formation for a particular group of units.
 
   |r4| is used to indicate that the next button press will pick the formation that selected units will use at their next destination.
 
@@ -78,16 +78,21 @@ Normally units will visit each waypoint in turn and then end their move at the d
 
 Since a unit under movement orders will not attack an enemy, patrols are mostly just a way to have a visibility probe going back and forth through the fog-of-war. Not often useful.
 
-Changing Facing in Place
-~~~~~~~~~~~~~~~~~~~~~~~~
+Changing Group Facing
+~~~~~~~~~~~~~~~~~~~~~
+
+If you issue a movement order and then change your mind about the facing you set at that destination, one option of course is to just issue a new movement order and drag the facing arrow to the direction that you've decided you really want. A faster option -- although with less fine control -- is to directly tweak the facing of your existing destination order left or right in chunks of a few degrees.
+
+  |l2| |plus| |rstick| left/right to change the group facing for a selection. (Mode-shifted right stick up/down have other effects described on the :doc:`Camera and Time<camera_and_time>` page.)
+
+You can also use this control even if your units have reached their destination and are now standing still; in that case, it will make the units move to rotate their formation "in place".
+
+Changing Unit Facing
+~~~~~~~~~~~~~~~~~~~~
 
   |l2| while touching |rtrack| to click on some unit in the current selection; hold the click and drag the cursor to change the facing of each unit in the group.
 
-In this situation as you begin to "drag" you will see a facing arrow on each unit in the selected group. Release the trigger when you are happy with where the facing arrows are pointing. In this action none of the units will move; they will just turn to look in a different direction.
-
-  |l2| |plus| |rstick| left/right to rotate a selected group in place. (Mode-shifted stick up/down have other effects described on the :doc:`Camera and Time<camera_and_time>` page.)
-
-In contrast this action will change the orientation of the current selection's formation. Individual units will move as necessary to get to their new positions.
+In this situation as you begin to "drag" you will see a facing arrow on each unit in the selected group. Release the trigger when you are happy with where the facing arrows are pointing. None of the units will leave their position, and the shape/placement of the unit formation will not change; the individual units will just turn to look in a different direction.
 
 Changing Formation in Place
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

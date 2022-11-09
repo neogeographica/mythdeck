@@ -18,9 +18,7 @@ In either case, once a given unit's target is dead, that unit will begin attacki
 Attack Ground
 ~~~~~~~~~~~~~
 
-  |r1| to click a spot on the ground will cause your selected units to attack that spot.
-
-This is only useful if your selected units will use a ranged attack.
+  |r1| to click a spot on the ground will cause your selected units to attack that spot. (This is generally only useful if your selected units will use a ranged attack.)
 
 Special Ability
 ~~~~~~~~~~~~~~~

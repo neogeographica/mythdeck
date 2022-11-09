@@ -27,4 +27,4 @@ Other Controls
 
   |l2| |plus| |aface| to play the "taunt" animation for selected units.
 
-  |l2| |plus| |xface| double-tap to rename selected units. Double-tap is required here to avoid entering the rename action's text entry box by accident. You would then need to open the virtual keyboard (Steam button + X) to type the new name.
+  |l2| |plus| |xface| double-tap to rename selected units. Double-tap is required here to avoid entering the rename action's text entry box by accident. To finish the rename action you will need to open the virtual keyboard (Steam button + X) and type the new name.
