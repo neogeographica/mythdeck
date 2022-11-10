@@ -1,7 +1,7 @@
 Myth: TFL
 =========
 
-If you installed the plugin "The Fallen Levels v2" as mentioned on the :doc:`Installation<../myth_config/installation>` page, you can play the campaign for Myth: The Fallen Lords too. A couple of notes here about that.
+If you installed the plugin "The Fallen Levels v2" as mentioned on the :doc:`Installation<../myth_setup/installation>` page, you can play the campaign for Myth: The Fallen Lords too. A couple of notes here about that.
 
 Playing the Tutorial
 --------------------

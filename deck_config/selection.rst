@@ -1,7 +1,7 @@
 Selection
 =========
 
-**Note:** This page assumes that you have the left-click and right-click behaviors in Myth set up as described on the :doc:`Controls<../myth_config/controls>` page.
+**Note:** This page assumes that you have the left-click and right-click behaviors in Myth set up as described on the :doc:`Controls<../myth_setup/controls>` page.
 
 Main Controls
 -------------

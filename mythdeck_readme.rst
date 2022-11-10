@@ -5,11 +5,11 @@ Overview
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: Myth Config
+   :caption: Myth Setup
 
-   myth_config/installation
-   myth_config/preferences
-   myth_config/controls
+   myth_setup/installation
+   myth_setup/preferences
+   myth_setup/controls
 
 .. toctree::
    :hidden:
@@ -39,7 +39,7 @@ Overview
 
 This is documentation for the "MythDeck" configuration to be used with "Myth II: Soulblighter" on the Steam Deck. I've included some info on how to install Myth 2 on the Steam Deck and some controls-related gameplay notes, but the main point here is to describe how to use the Steam Deck controls. When it comes to how-to-play-Myth basics, this is not a substitute for the game manual!
 
-**The most important things** to know about using this configuration are that **you must be using the Project Magma patch** for Myth 2 (version 1.8.3 or later) and **you must enable "Alternate Preset Recall" in the Myth controls preferences**. Failure to do this will result in having a really bad time! These and some other setup recommendations are covered in the Myth Config pages (see the Navigation table of contents in the sidebar).
+**The most important things** to know about using this configuration are that **you must be using the Project Magma patch** for Myth 2 (version 1.8.3 or later) and **you must enable "Alternate Preset Recall" in the Myth controls preferences**. Failure to do this will result in having a really bad time! These and some other setup recommendations are covered in the Myth Setup pages (see the Navigation table of contents in the sidebar).
 
 
 Background
@@ -68,9 +68,9 @@ A bare-bones summary of how to use this configuration:
 
 * In the Myth 2 controls preferences, make sure you are using the default "Right Handed" set of control keys, 
 
-* Also make sure that "Alternate Preset Recall" is enabled, and check the Myth Config pages here for some other recommendations.
+* Also make sure that "Alternate Preset Recall" is enabled, and check the Myth Setup pages here for some other recommendations.
 
 * At this point you're good to go, but you should really have a look at the Deck Config pages here for a controls explanation, and maybe the "Tips" pages for some general info.
 
 
-OK? Not trivial I guess, but not too bad, especially if you're already used to adding non-Steam games to your Deck. To go through these steps in detail, start with :doc:`Installation<myth_config/installation>` and then keep clicking the next-page link at the bottom of each page.
+OK? Not trivial I guess, but not too bad, especially if you're already used to adding non-Steam games to your Deck. To go through these steps in detail, start with :doc:`Installation<myth_setup/installation>` and then keep clicking the next-page link at the bottom of each page.

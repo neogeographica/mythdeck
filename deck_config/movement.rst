@@ -1,7 +1,7 @@
 Movement
 ========
 
-**Note:** This page assumes that you have the left-click and right-click behaviors in Myth set up as described on the :doc:`Controls<../myth_config/controls>` page.
+**Note:** This page assumes that you have the left-click and right-click behaviors in Myth set up as described on the :doc:`Controls<../myth_setup/controls>` page.
 
 Main Controls
 -------------
@@ -24,7 +24,7 @@ Formations
 
 While you have some units selected, you can choose a formation that will affect your next movement order. For example if you pick the "long line" formation and then give a movement order to some spot, the selected units' goal is to end up in a "long line" formation at that spot.
 
-If you have left "persistent formations" enabled (as described on the :doc:`Preferences<../myth_config/preferences>` page), a group of units will remember its formation for subsequent movement commands (unless you reload a savegame). In that case you only have to designate a formation when you want to change or initially set the formation for a particular group of units.
+If you have left "persistent formations" enabled (as described on the :doc:`Preferences<../myth_setup/preferences>` page), a group of units will remember its formation for subsequent movement commands (unless you reload a savegame). In that case you only have to designate a formation when you want to change or initially set the formation for a particular group of units.
 
   |r4| is used to indicate that the next button press will pick the formation that selected units will use at their next destination.
 
