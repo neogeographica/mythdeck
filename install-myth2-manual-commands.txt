@@ -1,0 +1,47 @@
+# These example commands assume that the "tags" files as well as a
+# downloaded Project Magma patch file are located in the current working
+# directory. If you need to change the specified locations of those files,
+# or the name of the patch file, then modify the appropriate values set for
+# the relevant variables at the beginning.
+
+# Set the path to the installer file.
+# Change this value if you need to.
+PM_MYTH2_INSTALLER=Myth2_184_Linux.tar.gz
+
+# Define the main directories we're going to use.
+# Change these values if you need to.
+MYTH2_TAGSDIR=$(pwd)
+MYTH2_INSTALLDIR=~/Games/Myth2
+
+# Unpack the installer in a temp directory.
+MYTH2_TMPDIR="/tmp/myth2-installer-$$"
+mkdir -p "$MYTH2_TMPDIR"
+mv "$PM_MYTH2_INSTALLER" "$MYTH2_TMPDIR"
+cd "$MYTH2_TMPDIR"
+tar xzf "$PM_MYTH2_INSTALLER"
+
+# Unpack the files needed to run Myth 2, and remove unused stuff.
+cd files
+rm *png
+7z x required.zip.7z
+unzip required.zip
+rm required.zip*
+rm Myth2_32bit
+
+# Move the installation to the desired location.
+cd ..
+mkdir -p "$MYTH2_INSTALLDIR"
+mv files/* "$MYTH2_INSTALLDIR/"
+
+# Copy the tags files into the installation. You can use "mv" instead of
+# "cp" if you want to move the files instead of copying them.
+cd "$MYTH2_INSTALLDIR"
+mkdir tags
+cp "$MYTH2_TAGSDIR/international large install" tags/
+cp "$MYTH2_TAGSDIR/large install" tags/
+cp "$MYTH2_TAGSDIR/medium install" tags/
+cp "$MYTH2_TAGSDIR/international small install" tags/
+cp "$MYTH2_TAGSDIR/small install" tags/
+
+# Remove our temp directory.
+rm -rf "$MYTH2_TMPDIR"

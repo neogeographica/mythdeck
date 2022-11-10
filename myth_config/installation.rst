@@ -6,29 +6,27 @@ Background
 
 There's a lot to learn/know around the topic of installing non-Steam games on the Deck, and I won't begin to try to cover it all here. But I can go over some things specific to Myth.
 
-First of all, you do need to own Myth 2 so that you can get a copy of the game data.
+Most importantly, you do need to own Myth 2 so that you can get a copy of the necessary game data. Myth 2 is unfortunately not on any digital games store these days but CDs can still be found.
 
-You also need the Linux patch from `Project Magma`_. I originally designed and tested this configuration using the 1.8.3 patch, and I've done a brief test with 1.8.4. Anything 1.8.3 or later should hopefully be fine.
+You will also be using the Linux patch for Myth 2 from `Project Magma`_. As I'll describe below, likely you will just be running a script that automatically fetches this file for you, and you don't have to worry about specifics. But it's also acceptable to manually download and use a specific version of the patch if you need to. FYI I originally designed and tested this configuration using the 1.8.3 patch, and I've used 1.8.4 too. Anything 1.8.3 or later should hopefully be fine.
 
-One thing you could do with the Linux patch is unpack it and run the little installer program that it comes with. There are a couple of problems with that though when it comes to the Deck:
+.. admonition:: \ 
 
-* The installer wants you to point it at either an existing Myth 2 installation to update, or a mounted Myth 2 CD.
-* The installer requires a code library (libgtk) that is not natively present on the Deck, and which would be a hassle to install correctly.
+    A quick digression here. Given that we're going to need to use the Project Magma patch, which comes with an installer program, why can't we just run that installer program? There's a couple of main reasons:
 
-So the better thing to do IMO is just to yank the necessary files out of the installer manually. You can do this directly on the Deck itself. Or, you can do this on some other Linux system, and then transfer all your files to the Deck when you have a working Myth 2 installation.
+    * The installer wants you to point it at either an existing Myth 2 installation to update, or a mounted Myth 2 CD, neither of which you are likely to have handy for your Deck.
+    * The installer requires a code library (libgtk) that is not natively present on the Deck, and which would be a hassle to install correctly.
+
+    So we'll just be yanking the necessary files out of the patch/installer and putting them where they need to go.
+
+You can do the Myth 2 installation work directly on the Deck itself. Or, you can do it on some other Linux system, and then transfer all the Myth 2 files to the Deck when you're done.
 
 In either case you will need to know how to transfer files to the Deck and how to run shell commands on the Deck. I *very strongly recommend against* trying to do the procedure below using the Deck's onscreen virtual keyboard! If you want to do the entire procedure on the Deck, you should have some other means of entering commands. You can connect a keyboard directly to the Deck, or use other methods (personally I run an ssh server on my Deck so that I can log in remotely to type commands from another computer).
 
 Necessary Files
 ---------------
 
-As mentioned above, you will need the Linux patch for Myth 2 from `Project Magma`_. For version 1.8.4 the patch filename is this:
-
-* Myth2_184_Linux.tar.gz
-
-For other future versions the filename will probably be similar. The instructions below assume that only those numbers in the middle will change for different versions of this patch.
-
-You also need the game data for Myth 2, which comes in the form of five "tags" files with these names:
+As mentioned above, you will need the game data for Myth 2, which comes in the form of five "tags" files with these names:
 
 * international large install
 * large install
@@ -38,64 +36,111 @@ You also need the game data for Myth 2, which comes in the form of five "tags" f
 
 If you already have an existing Myth 2 installation somewhere (or can create one), you can find these in the "tags" folder where the game is installed. Depending on what kind of Myth 2 CD you have you may also be able to easily find and copy them directly from the CD. In any case, you need to have these files on hand.
 
-With these files you can create a fully patched-up Myth 2 installation, either on the Deck itself or on some other Linux system.
+With these files on hand you can create a fully patched-up Myth 2 installation, either on the Deck itself or on some other Linux system. Away we go...
 
 Game Install
 ------------
 
-You're going to need to enter several commands in a shell, working in a filesystem where you have those six "necessary files" available. If you're working on some other Linux system or logging into the Deck remotely, you already have a shell you prefer to use. If you're just connecting a keyboard directly to the Deck, you need to put the Deck into desktop mode and you can start the Konsole app to get a shell.
+Now you're going to need to enter commands in a shell, working in a filesystem where you have those five "tags" files available. If you're working on some other Linux system or logging into the Deck remotely, you already have a shell you prefer to use. If you're just connecting a keyboard directly to the Deck, you need to put the Deck into desktop mode and you can start the Konsole app to get a shell.
 
-The instructions below assume that the five tags files are located in the /home/deck/Downloads directory. They can be initially stashed wherever you like, just substitute in the correct directory name when setting the value for TAGSDIR below.
+There are three different ways you can do this installation:
 
-The instructions below also assume that you want to install Myth 2 at /home/deck/Games/Myth2, but again you can change that if you like (in the value for MYTHDIR). Note that if you're doing this on the Deck, you do normally need to limit yourself to putting things somewhere under /home/deck (unless you've made some other power-user changes to your Deck system).
+* Using the provided script and accepting all the default behaviors.
+* Using the provided script and modifying the defaults.
+* Manually doing the steps yourself.
 
-You will need to begin work in whatever directory contains the Project Magma file, i.e. if that file is in /home/deck/Downloads then you should execute this:
+Likely the first way will be fine, but I'll also describe the other ways in case you need to handle some "things aren't working" or "I need to do something differently" issues.
+
+Scripted
+~~~~~~~~
+
+The easiest approach is to download a script and let it run with its default behavior. Here's the three things that the script will normally assume:
+
+* The "tags" files are in your current working directory (when you run the script).
+* The Project Magma patch file is the 1.8.4 patch, to be downloaded using the URL that was correct at the most recent update of this script.
+* The desired location for the Myth 2 installation is the ``Games/Myth2`` subdirectory under your home directory.
+
+If all these assumptions are good, you can run the install script without having to tweak anything. If on the other hand you think you will need to change one or more of those assumed behaviors, you should still read this section, but then continue on to the next section below to learn how to do those tweaks.
+
+For now let's say you're sticking with the defaults. One of those defaults means that your "working directory" needs to be the directory that contains the "tags" files. You can use the ``cd`` command if necessary to get your working directory correct before running the script. For example if the "tags" files are all in ``/home/deck/Downloads`` and you want to make that your working directory, then you should execute this command in the shell:
 
 .. code-block:: shell
 
     cd /home/deck/Downloads
 
-Once you have gotten into the correct directory, execute the following commands. You can skip any line that begins with "#"; that's just a comment to tell you what is going on.
+When you're happy with your working directory, you're ready to go. Execute the following commands in the shell. You can skip any line that begins with "#"; that's just a comment to tell you what is going on.
+
+(Note that the ``-LO`` argument to ``curl`` below ends with a letter O, not a zero.)
 
 .. code-block:: shell
 
-    # Define the directories we're going to use.
-    # Change these values if you need to.
-    TMPDIR=/tmp/projectmagma
-    TAGSDIR=/home/deck/Downloads
-    MYTHDIR=/home/deck/Games/Myth2
-    # Unpack the installer in our temp directory.
-    mkdir -p $TMPDIR
-    mv Myth2*Linux.tar.gz $TMPDIR
-    cd $TMPDIR
-    tar xzf Myth2*Linux.tar.gz
-    # Unpack the files needed to run Myth 2, and remove unused stuff.
-    cd files
-    rm *png
-    7z x required.zip.7z
-    unzip required.zip
-    rm required.zip*
-    rm Myth2_32bit
-    # Move the installation to the desired location.
-    cd ..
-    mkdir -p $MYTHDIR
-    mv files/* $MYTHDIR/
-    # Move the tags files into the installation.
-    cd $MYTHDIR
-    mkdir tags
-    mv $TAGSDIR/'international large install' tags/
-    mv $TAGSDIR/'large install' tags/
-    mv $TAGSDIR/'medium install' tags/
-    mv $TAGSDIR/'international small install' tags/
-    mv $TAGSDIR/'small install' tags/
-    # Remove our temp directory.
-    rm -rf $TMPDIR
+    # Download the script.
+    curl -LO https://github.com/neogeographica/mythdeck/raw/master/install-myth2.sh
 
-At this point, if you want to do a sanity check, you should be able to run the Myth2_64bit executable. Note that if you were logging into the Deck remotely to do the above work, at this point you do need to switch over to the Deck in desktop mode and run a Konsole shell there. "cd" into your Myth 2 game directory if necessary, and then just enter
+    # At this point you can optionally use "cat install-myth2.sh" or a text
+    # editor like "nano" to examine the script; make sure it's not doing
+    # anything shady.
+
+    # Now run the script.
+    bash install-myth2.sh
+
+    # Assuming all went well, you can delete the script.
+    rm install-myth2.sh
+
+Scripted but with Tweaks
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can change any or all of the three defaults by using "export" commands before you run the script. Note that the export commands described here **must be done in the same shell window where you will then run the script**.
+
+If you need to indicate that the tags files are in some directory that is *not* the current working directory, you can export a value for ``MYTH2_TAGSDIR``. For example if your tags files are all in the ``/tmp/tags`` directory then you would do this before running the script:
 
 .. code-block:: shell
 
-    ./Myth2_64bit
+    export MYTH2_TAGSDIR="/tmp/tags"
+
+If you need to get the Project Magma patch from some other location -- maybe the URL used by the script is broken, or maybe they've released a new version you want to use and the script hasn't updated yet -- then you can export a value for ``PM_MYTH2_INSTALLER``.
+
+One way to do this is to manually download the patch yourself and then use the path to that download as the value for ``PM_MYTH2_INSTALLER``. For example if you've manually downloaded ``Myth2_192_Linux.tar.gz`` into the ``/home/deck/Downloads`` directory then you would do this before running the script:
+
+.. code-block:: shell
+
+    export PM_MYTH2_INSTALLER="/home/deck/Downloads/Myth2_192_Linux.tar.gz"
+
+Alternatively you can set ``PM_MYTH2_INSTALLER`` to the URL where the patch is hosted, if you want the script to do the download for you. For example something like this:
+
+.. code-block:: shell
+
+    export PM_MYTH2_INSTALLER="https://some.website.com/stuff/Myth2_192_Linux.tar.gz"
+
+The final thing you can tweak is the directory where Myth 2 should be installed. This can be changed by exporting a value for ``MYTH2_INSTALLDIR``. For example if you want it to be installed to ``/home/deck/M2`` then you would do this before running the script:
+
+.. code-block:: shell
+
+    export MYTH2_INSTALLDIR="/home/deck/M2"
+
+Once you've done the exports for your tweaks, you can download and run the script as described in the previous section.
+
+Manually
+~~~~~~~~
+
+Perhaps there's some reason you can't use the script at all -- e.g. maybe you need to change some particular behavior that's not one of the three tweakable defaults. In that case you can do the work yourself with a series of shell commands.
+
+If the script isn't working for you, these commands might not work either, but at least you can see "under the hood" and perhaps change what you need to. Obviously you could also look at the script itself to see what it's doing, but the core sequence of necessary commands is simpler.
+
+Since hopefully nooooobody will need this, `I've put those commands in a separate file`_. Have a look if you really must.
+
+Sanity Check
+------------
+
+At this point, you might want to test that the game actually works!
+
+Note that if you were logging into the Deck remotely to do the above work, at this point you do need to switch over to the Deck in desktop mode and run a Konsole shell there.
+
+The program you want to run is ``Myth2_64bit`` inside your Myth 2 install directory. So if you installed Myth 2 into ``/home/deck/Games/Myth2``, you would execute this:
+
+.. code-block:: shell
+
+    /home/deck/Games/Myth2/Myth2_64bit
 
 Myth 2 should start up and run correctly. Once you get to the main menu, go ahead and quit out of it for now.
 
@@ -115,8 +160,8 @@ And also, support for playing the entire Myth\:TFL campaign and multiplayer in t
 
 Installing Myth addons is generally just a matter of extracting files into the right location as per their READMEs. In these cases, the end result will be:
 
-* For the two "Cutscenes" patches: a bunch of ".mov" files that go into a "cutscenes" subdirectory in your Myth 2 installation. Create that subdirectory if needed.
-* For the other three downloads: three large files that go into the "plugins" subdirectory.
+* For the two "Cutscenes" patches: a bunch of ".mov" files that go into a ``cutscenes`` subdirectory in your Myth 2 installation. Create that subdirectory if it's not there, using ``mkdir cutscenes`` while working in your Myth 2 directory.
+* For the other three downloads: three large files that go into the ``plugins`` subdirectory.
 
 Adding to Steam
 ---------------
@@ -155,6 +200,7 @@ You can use that to navigate the game menus during initial configuration.
 
 
 .. _Project Magma: https://projectmagma.net/downloads/myth2_updates/
+.. _I've put those commands in a separate file: https://github.com/neogeographica/mythdeck/raw/master/install-myth2-manual-commands.txt
 .. _The Tain: https://tain.totalcodex.net/
 .. _Detail Texture Megapack: https://tain.totalcodex.net/items/show/detail-texture-megapack
 .. _Myth II QuickTime Cutscenes: https://tain.totalcodex.net/items/show/myth-ii-quicktime-cutscenes
