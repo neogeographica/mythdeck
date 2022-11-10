@@ -113,7 +113,10 @@ And also, support for playing the entire Myth\:TFL campaign and multiplayer in t
 * `Myth TFL Quicktime Cutscenes`_
 * `Myth TFL Multiplayer Mappack`_
 
-Installing Myth addons is generally just a matter of extracting files into the right location as per their READMEs. In these cases, the end result though will be (for the two "Cutscenes" patches) a bunch of ".mov" files that go into a "cutscenes" subdirectory in your Myth 2 installation, and (for the other three downloads) three large files that go into the "plugins" subdirectory.
+Installing Myth addons is generally just a matter of extracting files into the right location as per their READMEs. In these cases, the end result will be:
+
+* For the two "Cutscenes" patches: a bunch of ".mov" files that go into a "cutscenes" subdirectory in your Myth 2 installation. Create that subdirectory if needed.
+* For the other three downloads: three large files that go into the "plugins" subdirectory.
 
 Adding to Steam
 ---------------

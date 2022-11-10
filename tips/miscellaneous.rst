@@ -1,6 +1,13 @@
 Miscellaneous
 =============
 
+Paddle-ing
+----------
+
+Something you probably already know, but which took me a bit to figure out:
+
+To press one of the rear paddle buttons on the Steam Deck, don't try to squeeze the part closest to your hand. Instead, push out with your fingertip on the part of the paddle that is farthest from your hand.
+
 Tutorial Keybindings
 --------------------
 

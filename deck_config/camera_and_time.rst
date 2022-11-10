@@ -17,11 +17,13 @@ Camera Moves
 Game Speed
 ~~~~~~~~~~
 
-  |view| (upper left menu button) to reduce the game speed by one step. Holding this button (instead of just pressing it) "resets" the game speed -- in singleplayer, this means that game speed goes back to normal, while in film replay it means that time stops.
+  |view| (upper left menu button) to reduce the game speed by one step. Holding this button instead of just pressing it will "reset" the game speed (see below).
 
   |l2| |plus| |view| to increase the game speed by one step. Holding this combo sets game speed to max.
 
   |menu| to pause and resume the game.
+
+The speed "reset" mentioned above behaves differently depending on the current game speed. If the game speed is currently slower than normal, "reset" will stop time. If the game speed is currently faster than normal, "reset" will bring it down to normal speed.
 
 |
 

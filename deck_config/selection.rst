@@ -11,6 +11,8 @@ Select All Visible
 
   |l1| to select all units visible on the screen.
 
+Curiously, if there are no un-selected units on-screen when you do this action, it will instead behave like "deselect all".
+
 Manual Selection
 ~~~~~~~~~~~~~~~~
 
