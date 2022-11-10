@@ -31,8 +31,6 @@ Here's a few conventions used when controls are represented in the following pag
 
   "<some button> **+** <some other button> **+** <yet another button>" will show up in a few cases where you can use a button combo while mode-shifted. This means that <some button> and <some other button> should be held down then pressing <yet another button>. The order in which you begin holding <some button> and <some other button> does not matter.
 
-  |view| is the icon for the "view" or "select" button (upper left menu button) in the excellent `Steam Deck icon set`_ that I've found to use here. This is the one case where the icon doesn't look exactly like the button! But close enough.
-
 Another thing to note about the following pages is that they cover all of the Myth control behaviors instead of just saying what the MythDeck bindings are. For example rather than just saying that L4 is the shift key, these pages describe how you use L4 for various selection and move orders. That makes for more text, but hopefully it's more useful that way.
 
 The Essentials

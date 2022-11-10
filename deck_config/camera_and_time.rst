@@ -17,7 +17,7 @@ Camera Moves
 Game Speed
 ~~~~~~~~~~
 
-  |view| (upper left menu button) to reduce the game speed by one step. Holding this button instead of just pressing it will "reset" the game speed (see below).
+  |view| to reduce the game speed by one step. Holding this button instead of just pressing it will "reset" the game speed (see below).
 
   |l2| |plus| |view| to increase the game speed by one step. Holding this combo sets game speed to max.
 
