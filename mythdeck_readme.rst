@@ -47,6 +47,11 @@ Background
 
 Myth: The Fallen Lords and Myth II: Soulblighter are a couple of my favorite games from the golden age of back when the World Wide Web was just getting off the ground. Along with Quake and a small number of other titles, they're games that I always have installed and it's fun to try them out in new contexts. Fortunately a small but dedicated community of players and developers have kept Myth updated and playable on new hardware and operating systems.
 
+
+.. raw:: html
+
+    <iframe class="smallVid pic_left" src="https://www.youtube.com/embed/yXyEtGolFZE?mute=1&amp;showinfo=0&amp;autohide=1&amp;fs=0&amp;modestbranding=1&amp;rel=0&amp;controls=0&amp;autoplay=1&amp;loop=1&amp;playlist=yXyEtGolFZE" frameborder="0" allowfullscreen></iframe>
+
 So Myth on the Steam Deck was something I wanted to try. The Myth games leverage the capabilities of mouse and keyboard input *very* heavily -- at one point I looked into making a good Myth configuration for the original Steam Controller and couldn't pull it off -- but it looked like the Steam Deck would have just enough input oomph to make it work. (Also sometimes I enjoy the process of optimizing a game control scheme a bit too much.)
 
 This config is what I ended up with! I like it a lot. So far I've played through the Myth 2 single player campaign with it, on Normal difficulty which is down a notch from the Heroic setting I would have originally used with m+kb. The Myth 2 campaign is one I haven't dusted off for many years now so IMO being able to play it on Normal, lounging in a bed/sofa/chair, seems pretty good.
