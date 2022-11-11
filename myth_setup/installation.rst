@@ -6,7 +6,7 @@ Background
 
 There's a lot to learn/know around the topic of installing non-Steam games on the Deck, and I won't begin to try to cover it all here. But I can go over some things specific to Myth.
 
-Most importantly, you do need to own Myth 2 so that you can get a copy of the necessary game data. Myth 2 is unfortunately not on any digital games store these days but CDs can still be found.
+Most importantly, you do need to have Myth 2 so that you can get a copy of the necessary game data. Myth 2 is unfortunately not on sale through any games store these days, but CDs can still be found for cheap in marketplaces like Amazon and eBay -- either the original *Myth II: Soulblighter* CD or pack-ins like *Myth II: Worlds* or *Myth: The Total Codex* will get you what you need. And FWIW, Myth 2 is also a prime example of something that the gaming internet considers to be "abandonware", with all that implies.
 
 You will also be using the Linux patch for Myth 2 from `Project Magma`_. As I'll describe below, likely you will just be running a script that automatically fetches this file for you, and you don't have to worry about specifics. But it's also acceptable to manually download and use a specific version of the patch if you need to. FYI I originally designed and tested this configuration using the 1.8.3 patch, and I've used 1.8.4 too. Anything 1.8.3 or later should hopefully be fine.
 
