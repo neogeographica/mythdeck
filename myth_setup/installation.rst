@@ -75,7 +75,7 @@ When you're happy with your working directory, you're ready to go. Execute the f
 .. code-block:: shell
 
     # Download the script.
-    curl -LO https://github.com/neogeographica/mythdeck/raw/master/install-myth2.sh
+    curl -LO https://github.com/neogeographica/mythdeck/raw/main/install-myth2.sh
 
     # At this point you can optionally use "cat install-myth2.sh" or a text
     # editor like "nano" to examine the script; make sure it's not doing
