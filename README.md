@@ -1,5 +1,5 @@
 This repository is used to build documentation for installing, configuring, and playing *Myth II: Soulblighter* on the Steam Deck.
 
-Currently it is a work in progress! The resulting documentation is not published anywhere yet.
+You can see the resulting documentation online at [tinyurl.com/mythdeck](https://tinyurl.com/mythdeck).
 
-When completed it will go hand-in-hand with a community input configuration for the game, named MythDeck, which is also not yet published.
+These docs go hand-in-hand with a community input configuration for the game, named MythDeck.
