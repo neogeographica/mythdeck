@@ -19,7 +19,7 @@ Those images start off showing the default control set. As described below, ther
 Conventions
 -----------
 
-Here's a few conventions used when controls are represented in the following pages:
+Here's a few conventions used when controls are represented in the following pages. BTW these nice `public domain controller-button icons`_ are from Nicolae Berbece and Paul Paun, thanks!
 
   "|r2|" will be used whenever a left mouseclick action is needed. You can also always click the right trackpad to do this action, but to keep things streamlined I'll stop mentioning that alternative once we get really deep into the controls description.
 
@@ -53,4 +53,4 @@ But FYI the *most* essential controls are these:
   |menu| to bring up or dismiss the pause menu in-game.
 
 
-.. _Steam Deck icon set: https://thoseawesomeguys.com/prompts/
+.. _public domain controller-button icons: https://thoseawesomeguys.com/prompts/
