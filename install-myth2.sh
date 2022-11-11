@@ -164,7 +164,8 @@ function cleanup {
     echo
     echo All done!
     echo
-    echo Please see the MythDeck documentation for configuration info.
+    echo Please see the MythDeck documentation for configuration info:
+    echo https://tinyurl.com/mythdeck
   fi
   echo
 }
