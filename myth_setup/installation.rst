@@ -200,7 +200,7 @@ You can use that to navigate the game menus during initial configuration.
 
 
 .. _Project Magma: https://projectmagma.net/downloads/myth2_updates/
-.. _I've put those commands in a separate file: https://github.com/neogeographica/mythdeck/raw/master/install-myth2-manual-commands.txt
+.. _I've put those commands in a separate file: https://github.com/neogeographica/mythdeck/raw/main/install-myth2-manual-commands.txt
 .. _The Tain: https://tain.totalcodex.net/
 .. _Detail Texture Megapack: https://tain.totalcodex.net/items/show/detail-texture-megapack
 .. _Myth II QuickTime Cutscenes: https://tain.totalcodex.net/items/show/myth-ii-quicktime-cutscenes
