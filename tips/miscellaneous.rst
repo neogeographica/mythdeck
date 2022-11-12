@@ -45,7 +45,7 @@ When you get into more complicated actions involving drags, modifiers, and/or do
 Touchscreen
 -----------
 
-You can use the Deck's touchscreen to do left-click and left-click-and-drag actions if you like. As covered above, this means that you not only have capability for touchscreen selection and targeting, but you can also do simple attack commands with the touchscreen.
+You can use the Deck's touchscreen to do left-click and left-click-and-drag actions if you like. As covered above, this means that you not only have capability for touchscreen selection and targeting, but you can also do simple movement commands with the touchscreen.
 
 I was initially pretty excited about this... but IMO the responsiveness of the touchscreen makes it a poor runner-up to just using the right trackpad and the triggers.
 
