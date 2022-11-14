@@ -57,7 +57,7 @@ Scripted
 The easiest approach is to download a script and let it run with its default behavior. Here's the three things that the script will normally assume:
 
 * The "tags" files are in your current working directory (when you run the script).
-* The Project Magma patch file is the 1.8.4 patch, to be downloaded using the URL that was correct at the most recent update of this script.
+* The Project Magma patch file is the 1.8.4 patch, which the script will download from the Project Magma website.
 * The desired location for the Myth 2 installation is the ``Games/Myth2`` subdirectory under your home directory.
 
 If all these assumptions are good, you can run the install script without having to tweak anything. If on the other hand you think you will need to change one or more of those assumed behaviors, you should still read this section, but then continue on to the next section below to learn how to do those tweaks.
@@ -196,7 +196,7 @@ Among other things, the MythDeck config provides mouse support:
 
   |r2| or click |rtrack| to do a mouseclick.
 
-You can use that to navigate the game menus during initial configuration.
+You can use that to navigate the game menus during initial configuration. (Using the touchscreen will also work, but is less precise -- and liable to leave fingerprints on your screen.)
 
 
 .. _Project Magma: https://projectmagma.net/downloads/myth2_updates/
